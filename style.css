@@ -1,0 +1,145 @@
+body {
+    background-image: url('bg-intro-desktop.png');
+    background-color:hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.form {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: auto 40%;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    margin-left: 30px;
+    padding: 50px;
+}
+
+.text {
+    margin-top: 110px;
+    margin-right: 90px;
+    width: 100%;
+    color: white;
+}
+
+.text h1 {
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 50px;
+}
+
+
+.form-field {
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: 0 8px hsla(249, 5%, 48%, 0.37);
+}
+
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type=text], [type=password], [type=email] {
+    border-radius: 4px;
+    border: 0.5px solid grey;
+    font-size: 16px;
+    margin: 0 10px 15px 10px;
+    padding: 12px 15px;
+    font-size: small;
+    width: 80%;
+    font-weight: 600;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus {
+    border: 0.2px solid grey;
+}
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    width: 87.8%;
+    cursor: pointer;
+    box-shadow: 0 3px hsl(154, 57%, 38%);
+}
+
+.trial {
+    width: 100%;
+    text-align: center;
+    padding: 1px 8px;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px hsla(249, 5%, 48%, 0.263);
+}
+
+small {
+    display: block;
+    padding-top: 20px;
+    font-weight: 400;
+    color: rgb(137, 131, 131);
+    font-size: 0.67em;
+}
+
+.terms {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+
+@media (min-width: 600px) {
+    body {
+        transform: scale(0.8);
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    body {
+        background-image: url('bg-intro-mobile.png');
+        background-color:hsl(0, 100%, 74%);
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .text {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .trial {
+        width: 100%;
+    }
+
+
+    .form-field {
+        width: 90%;
+    }
+
+    .grid-container {
+        display: grid; 
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
